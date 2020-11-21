@@ -41,7 +41,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'clappr-analytics-plugin.js',
-    library: 'clapprAnalyticsPlugin',
+    library: 'ClapprAnalyticsPlugin',
     libraryTarget: 'umd',
   },
 };

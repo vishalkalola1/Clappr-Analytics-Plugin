@@ -1,19 +1,21 @@
 <head>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@0.3/dist/clappr.min.js"></script>
-    <script type="text/javascript" src="../dist/clappr-thumbnails-plugin.js"></script>
-  </head>
-  <body>
-    <div id="player"></div>
-    <script>
-      // generate thumbs dat
-  
-      var player = new Clappr.Player({
-          source: "https://tjenkinson.me/clappr-thumbnails-plugin/assets/video.mp4",
-          parentId: "#player"
-      });
-
-      var service = new ClapprThumbnailsPlugin.PlayerService(player)
-  
-    </script>
-  </body>
+    <script type="text/javascript" src="../dist/clappr-analytics-plugin.js"></script>
+</head>
+<body>
+<div id="player" style="width: 100px;height: 100px;background-color: black;"></div>
+<script>
+    var player = new Clappr.Player({
+        source: "https://tjenkinson.me/clappr-thumbnails-plugin/assets/video.mp4",
+        parentId: "#player",
+        plugins: {
+            container: [ClapprAnalyticsPlugin]
+        },
+        analyticsdata: {
+            socketbaseurl: 'http://0.0.0.0:5000', // set to 0 or null to disable backdrop
+            channelname: "playerevents", // set to 0 or null to disable spotlight
+        }
+    });
+</script>
+</body>
   
