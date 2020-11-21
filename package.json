@@ -1,7 +1,7 @@
 {
   "name": "clappr-analytics-plugin",
-  "version": "1.0.1",
-  "description": "\"Library for analytics\"",
+  "version": "1.0.2",
+  "description": "\"A plugin for clappr which will get all user events\"",
   "main": "dist/clappr-analytics-plugin.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack --progress --optimize-occurence-order",
@@ -11,8 +11,9 @@
   "keywords": [
     "\"analytics\""
   ],
-  "author": "vishal KALOLA",
+  "author": "vishal KALOLA <vishalkalola196@gmail.com>",
   "license": "MIT",
+  "repository": "vishalkalola1/Clappr-Analytics-Plugin",
   "devDependencies": {
     "babel-core": "^6.7.5",
     "babel-loader": "^6.2.4",

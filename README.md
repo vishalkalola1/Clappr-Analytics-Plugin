@@ -1,7 +1,7 @@
 # Clappr Analytics Plugin
 [![npm version](https://github.com/vishalkalola1/Clappr-Analytics-Plugin/blob/master/image/badge.svg)](https://github.com/vishalkalola1/clappr-analytics-plugin)
 
-**A plugin for clappr which will get all User events. Event handlers can be used to handle and verify user input, user actions, and browser actions:**
+**A plugin for clappr which will get all user events. Event handlers can be used to handle and verify user input, user actions, and browser actions:**
 
 * Things that should be done every time a page loads
 * Things that should be done when the page is closed
