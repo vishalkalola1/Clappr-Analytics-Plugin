@@ -1,6 +1,6 @@
 {
   "name": "clappr-analytics-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "\"A plugin for clappr which will get all user events\"",
   "main": "dist/clappr-analytics-plugin.js",
   "scripts": {
@@ -30,8 +30,10 @@
     "webpack": "^1.12.2"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "build": "^0.1.4",
     "clappr": "^0.3.13",
-    "live-server": "^1.2.1",
+    "detect-gpu": "^3.0.0",
     "socket.io-client": "^2.3.1"
   }
 }

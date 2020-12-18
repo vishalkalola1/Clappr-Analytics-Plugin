@@ -1,5 +1,5 @@
 # Clappr Analytics Plugin
-[![npm version](https://github.com/vishalkalola1/Clappr-Analytics-Plugin/blob/master/image/badge.svg)](https://github.com/vishalkalola1/clappr-analytics-plugin)
+[![npm version](https://i.imgur.com/Q4lReQ8.png)](https://github.com/vishalkalola1/clappr-analytics-plugin)
 
 **A plugin for clappr which will get all user events. Event handlers can be used to handle and verify user input, user actions, and browser actions:**
 
@@ -39,10 +39,24 @@ var player = new Clappr.Player({
         container: [ClapprAnalyticsPlugin]
     },
     analyticsdata: {
-        socketbaseurl: 'http://0.0.0.0:5000', // set to 0 or null to disable backdrop
-        channelname: "playerevents", // set to 0 or null to disable spotlight
+        socketbaseurl: 'http://0.0.0.0:5000', // add your backend url
+        channelname: "events", // get channelname from backend and add here
+        offlinedatachannelname: "offlineevents" // get offlineevents from backend and add here
     }
 });
+```
+
+**Note: Setup Flask with socket.io and connect through websocket. do not use transport long-polling method use websocket**
+
+**Backend**
+```
+@socketio.on("offlineevents") // "offlineevents" channel name in frontend
+def handle_offlinedata(messages):
+    return messages
+    
+@socketio.on("events") // "events" channel name in frontend
+def handle_Channel1(message):
+    return message
 ```
 
 # Demo
