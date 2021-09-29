@@ -12,7 +12,9 @@
   },
   "keywords": [
     "analytics",
-    "clappr"
+    "clappr",
+    "plugin",
+    "analytics-plugin"
   ],
   "author": "vishal KALOLA <vishalkalola196@gmail.com>",
   "license": "MIT",
