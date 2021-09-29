@@ -7,7 +7,7 @@ export default class SocketService {
         this.options = options;
         this.deviceinfo = deviceinfo;
         this.utis = utils;
-        this.manager = io(options.socketbaseurl,{reconnection:true, transports: ['websocket'], upgrade: false,autoConnect:true});
+        this.manager = io(options.socketbaseurl,{reconnection:true, transports: ['websocket'], upgrade: false, autoConnect:true});
         this.removeAllListener();
         this.connectDisconnectSub();
     }
@@ -22,6 +22,9 @@ export default class SocketService {
             console.log("===>>> Socket Disconnect <<<===")
             this.connectdisconnectEvent("disconnect");
         })
+        this.manager.on("connect_error", (err) => {
+            console.log(`connect_error due to ${err.message}`);
+          });
     }
 
     removeAllListener(){

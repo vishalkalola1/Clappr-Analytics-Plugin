@@ -49645,4 +49645,4 @@ module.exports = exports.default;
 
 /******/ });
 });
-//# sourceMappingURL=Clappr-Analytics-Plugin.js.map
+//# sourceMappingURL=Clappr-Analytics-Plugin.external.js.map

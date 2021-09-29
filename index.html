@@ -1,6 +1,6 @@
 <head>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@0.3/dist/clappr.min.js"></script>
-    <script type="text/javascript" src="./dist/clappr-analytics-plugin.js"></script>
+    <script type="text/javascript" src="./dist/Clappr-Analytics-Plugin.js"></script>
 </head>
 <body>
 <div id="player" style="width: 100px;height: 100px;background-color: black;"></div>
@@ -12,8 +12,8 @@
             container: [ClapprAnalyticsPlugin]
         },
         analyticsdata: {
-            socketbaseurl: 'http://0.0.0.0:5000',
-            channelname: "playerevents",
+            socketbaseurl: 'https://clappranalytics.herokuapp.com/',
+            channelname: "events",
             offlinedatachannelname:"offlineevents"
         }
     });
