@@ -1,5 +1,6 @@
 # Clappr Analytics Plugin
-[![npm version](https://i.imgur.com/Q4lReQ8.png)](https://github.com/vishalkalola1/clappr-analytics-plugin)
+
+[![npm version](https://badge.fury.io/js/clappr-analytics-plugin.svg)](https://github.com/vishalkalola1/clappr-analytics-plugin)
 
 **A plugin for clappr which will get all user events. Event handlers can be used to handle and verify user input, user actions, and browser actions:**
 
@@ -48,8 +49,7 @@ var player = new Clappr.Player({
 
 **Note: Setup Flask with socket.io and connect through websocket. do not use transport long-polling method use websocket**
 
-**Click link for Demo:**
-**https://vishalkalola1.github.io/Clappr-Analytics-Plugin/**
+[![Github Version](https://badge.fury.io/gh/vishalkalola1%2FClappr-Analytics-Plugin.svg)](https://vishalkalola1.github.io/Clappr-Analytics-Plugin/)
 
 **Backend**
 ```
