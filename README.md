@@ -1,6 +1,6 @@
 # Clappr Analytics Plugin
 
-[![npm version](https://badge.fury.io/js/clappr-analytics-plugin.svg)](https://github.com/vishalkalola1/clappr-analytics-plugin)
+[![npm version](https://badge.fury.io/js/clappr-analytics-plugin.svg)](https://www.npmjs.com/package/clappr-analytics-plugin)
 
 **A plugin for clappr which will get all user events. Event handlers can be used to handle and verify user input, user actions, and browser actions:**
 
