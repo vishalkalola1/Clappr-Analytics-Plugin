@@ -48,6 +48,9 @@ var player = new Clappr.Player({
 
 **Note: Setup Flask with socket.io and connect through websocket. do not use transport long-polling method use websocket**
 
+**Click link for Demo:**
+**https://vishalkalola1.github.io/Clappr-Analytics-Plugin/**
+
 **Backend**
 ```
 @socketio.on("offlineevents") // "offlineevents" channel name in frontend
@@ -59,8 +62,8 @@ def handle_Channel1(message):
     return message
 ```
 
-# Demo
-To run the demo start a web server with the root directory being the root of this repo, and then browse to the "index.html" file in the "demo" folder.
+# Development Server
+`npm run start`
 
 # Development
 * Install dependencies:
