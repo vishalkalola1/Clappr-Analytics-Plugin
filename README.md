@@ -39,7 +39,7 @@ var player = new Clappr.Player({
         container: [ClapprAnalyticsPlugin]
     },
     analyticsdata: {
-        socketbaseurl: 'http://0.0.0.0:5000', // add your backend url
+        socketbaseurl: 'https://clappranalytics.herokuapp.com/', // add your backend url
         channelname: "events", // get channelname from backend and add here
         offlinedatachannelname: "offlineevents" // get offlineevents from backend and add here
     }
